@@ -5,6 +5,7 @@ body {
 }
 
 body {
+   min-width: 1200px;
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 22px;  
@@ -37,10 +38,19 @@ a {
 
 .central-block {
   width: 1146px;
-  margin: 0 auto;
- 
+  margin: 0 auto; 
 }
  
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 0px;
+  width: 0px;
+  margin: 0px;
+  padding: 0;
+  border: 0;
+}
 
 body > input[type="radio"] {
   display: none;
@@ -128,7 +138,7 @@ body > input[type="radio"] {
 
 .nav-2 {
   min-height: 100px;
-  width: 267px;
+  width: 272px;
   float: right;
   margin-top: 20px;
   background-color green;
@@ -183,7 +193,7 @@ body > input[type="radio"] {
 }
 
 .nav-2-text { 
-  width: 167px;
+  width: 175px;
   margin-top: 20px;
   margin-left: 100px;  
   background-color blue;
@@ -683,4 +693,274 @@ body > input[type="radio"] {
   background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
   background:         linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
   box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.map {  
+  height: 411px;
+  background-image: url("../img/map.jpg");
+  box-sizing: border-box;
+  padding-top: 60px;
+}
+
+.contacts {
+  min-height: 300px;
+  width: 300px;
+  background-color: #FDFDFD;
+  border-radius: 15px;
+  margin-left: 800px;
+  box-sizing: border-box;
+  padding-top: 25px;
+}
+
+.adress {    
+    width: 225px;
+    height: 90px;
+    margin-left: 25px;        
+}
+
+.adress span {
+    display: block;
+    width: 155px;
+    height: 40px;   
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 20px;  
+    font-weight: normal;
+    color: #323232; 
+}
+
+.adress b {
+    display: block;
+    width: 225px;
+    height: 48px;   
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 24px;  
+    font-weight: bold;
+    color: #323232; 
+}
+
+.phone {
+    width: 180px;
+    height: 70px;
+    margin-left: 25px;
+    margin-top: 15px;
+}
+
+.phone-text-1 {
+    display: block;
+    width: 175px;
+    height: 20px;   
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 20px;  
+    font-weight: normal;
+    color: #323232;     
+}
+
+.phone b {
+    display: block;
+    width: 140px;
+    height: 22px;   
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 22px;  
+    font-weight: bold;
+    color: #323232;
+}
+
+.phone-text-2 {
+    display: block;
+    width: 155px;
+    height: 44px;   
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 22px;  
+    font-weight: normal;
+    color: #323232; 
+}
+
+.contacts button {    
+    width: 250px;
+    height: 45px;   
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 24px;  
+    font-weight: bold;
+    color: #fefefe;
+    cursor: pointer;
+    border: none; 
+    background:    -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
+  background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
+  background:         linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+  border-radius: 100px;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  margin-left: 25px;
+  margin-top: 20px;
+}
+
+.contacts button:hover {    
+  background:    -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+  background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+  background:         linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.contacts button:active {    
+  background:    -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
+  background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
+  background:         linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+
+.main-footer {
+  min-height: 105px;
+  background-color yellow;
+}
+
+.social {
+  height: 38px;
+  width: 250px;
+  float: left;
+  margin-top: 35px;  
+}
+
+.social a {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  border: 3px solid #C2CEC7;
+  float: left;
+  margin-left: 10px;
+  position: relative;  
+}
+
+.social a:first-child {  
+  margin-left: 0; 
+}
+
+.social a::before {
+  content: "";
+  position: absolute;
+  height: 32px;
+  width: 32px;  
+}
+
+.social .tw::before {
+    background-image: url("../img/sprite-3.png");
+    background-position: 98px 0px;
+}
+
+.social .inst::before {
+    background-image: url("../img/sprite-3.png");
+    background-position: 130px 0px;
+}
+
+.social .fb::before {
+    background-image: url("../img/sprite-3.png");
+    background-position: -32px 0px;
+}
+
+.social .vk::before {
+    background-image: url("../img/sprite-3.png");
+    background-position: 0px 0px;
+}
+
+.social a:hover {
+  opacity: 0.8;
+}
+
+.social a:active {
+    box-shadow: 0px 2px 0px 2px #000 inset; 
+}
+
+.footer-info-block {
+   min-height: 40px;
+   width: 350px;
+   float: left;
+   margin-top: 35px;
+   margin-left: 150px;   
+}
+
+.footer-info-block-text {
+  width: 165px;
+  min-height: 36px;
+  float: left;
+  padding-left: 25px;  
+  
+}
+
+.footer-info-block-text:first-child {
+  width: 115px;
+  margin-right: 10px;
+  position: relative; 
+}
+
+.footer-info-block-text:first-child:before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 13px;
+    top: 6px;
+    left: 0;
+    background-image: url("../img/sprite-1.png");
+    background-position: 36px 0px;
+}
+
+.footer-info-block-text a {  
+   font-family: "Roboto", "Arial", sans-serif;
+    font-size: 13px;
+    line-height: 18px;  
+    font-weight: normal;
+    color: #fff; 
+    text-decoration: underline;  
+}
+
+.footer-info-block-text .bold {
+    font-weight: bold;
+}
+
+.footer-info-block-text a:hover,
+.footer-info-block-text a:active {  
+   color: #FFBC9E;
+}
+
+.html-academy {
+    min-height: 60px;
+    width: 200px;
+    float: right;
+    box-sizing: border-box;
+    padding-top: 40px;
+    margin-top: 20px;
+    position: relative;       
+}
+
+.html-academy::before {
+   content: "";
+   position: absolute;
+   width: 108px;
+   height: 38px;
+   top: 0;
+   left: 0;
+   background-image: url("../img/sprite-3.png");
+   background-position: -64px;
+}
+
+.html-academy-text {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 12px;
+    line-height: 18px;  
+    font-weight: normal;
+    color: #fefefe;    
+}
+
+.html-academy-text a {    
+    color: #fefefe;
+    text-decoration: underline;
+}
+
+.html-academy-text a:hover,
+.html-academy-text a:active {    
+    color: #FFBC9E;   
 }
