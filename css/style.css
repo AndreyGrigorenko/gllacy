@@ -156,10 +156,36 @@ body > input[type="radio"] {
   font-size: 14px;
   line-height: 16px;  
   font-weight: 500;
-  color: #fff;
+  color: #A0B4A9;
   background-color: #A0B4A9;
-
+  position: relative;
+ box-sizing: border-box; 
+ position: relative;
 }
+
+
+.button-1:hover {  
+  color: #fff;
+  background-color: #fff;
+}
+
+.button-1::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 18px;
+  top: 6px;
+  left: 6px;
+  background-image: url("../img/sprite-1.png");
+  background-position: 92px;
+  z-index: 2;
+}
+
+.button-1:hover::before {  
+  background-image: url("../img/sprite-1.png");
+  background-position: 53px; 
+}
+
 
 .button-2 {
   height: 30px;
@@ -173,13 +199,36 @@ body > input[type="radio"] {
   line-height: 16px;  
   font-weight: 500;
   color: #fff;
+  box-sizing: border-box;
+  padding-left: 30px;
   background-color: #A0B4A9;
-  
+  position: relative;
+}
+
+.button-2::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  top: 5px;
+  left: 15px;
+  background-image: url("../img/sprite-1.png");
+  background-position: -50px;
+}
+
+.button-2:hover::before {  
+  background-image: url("../img/sprite-1.png");
+  background-position: -88px; 
+}
+
+.button-2:hover {   
+  background-color: #fff;
+  color: #000;
 }
 
 .button-3 {
   height: 30px;
-  width:115px;
+  width: 115px;
   border-radius: 20px;
   border: none;
   cursor: pointer;
@@ -189,7 +238,30 @@ body > input[type="radio"] {
   font-weight: 500;
   color: #fff;
   background-color: #A0B4A9;
-  
+  box-sizing: border-box;
+  padding-left: 30px;
+  position: relative;  
+}
+
+.button-3::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  top: 5px;
+  left: 20px;
+  background-image: url("../img/sprite-1.png");
+  background-position: 20px;
+}
+
+.button-3:hover::before {  
+  background-image: url("../img/sprite-1.png");
+  background-position: -30px;  
+}
+
+.button-3:hover {   
+  background-color: #fff;
+  color: #000;
 }
 
 .nav-2-text { 
@@ -291,13 +363,15 @@ body > input[type="radio"] {
   width: 17px;
   height: 17px;
   margin-right: 8px;
-
   vertical-align: top;
-
-  background-color: transparent;
+  background-color: inherit;
   border: 2px solid #fff;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.slider-controls label:hover {
+   background-color: rgba( 255, 255, 255, 0.5);  
 }
 
 #btn-1:checked ~ .site-wrapper #slide1,
