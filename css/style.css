@@ -42,14 +42,10 @@ a {
 }
  
 .visually-hidden {
-  position: absolute;
-  overflow: hidden;
+  position: absolute;  
   clip: rect(0 0 0 0);
   height: 0px;
-  width: 0px;
-  margin: 0px;
-  padding: 0;
-  border: 0;
+  width: 0px; 
 }
 
 body > input[type="radio"] {
@@ -86,8 +82,8 @@ body > input[type="radio"] {
 .main-header {
   min-height: 120px;
   box-sizing: border-box;
-  padding-top 10px;
-  background-color red;
+  
+  background-color green;
 }
 
 .logo {  
@@ -95,7 +91,7 @@ body > input[type="radio"] {
   width: 154px;
   float: left;
   margin-top: 10px;
-  background-color green;
+  background-color blue;
 }
 
 .main-menu {
@@ -127,6 +123,7 @@ body > input[type="radio"] {
    padding: 10px 15px;
   display: block;
   border-radius: 20px;
+  margin-left: 5px;
 
 }
 
@@ -141,7 +138,7 @@ body > input[type="radio"] {
   width: 272px;
   float: right;
   margin-top: 20px;
-  background-color green;
+  background-color red;
 }
 
 
@@ -1037,4 +1034,90 @@ body > input[type="radio"] {
 .html-academy-text a:hover,
 .html-academy-text a:active {    
     color: #FFBC9E;   
+}
+
+
+/* Каталог */
+
+.main-header-block {
+  width: 580px;
+  height: 121px;
+  float: left;  
+}
+
+.main-header-links {
+  clear: both;
+  width: 300px;
+  margin-top: 100px; 
+}
+
+.main-header-links a {  
+  font-family: "Roboto", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 16px;  
+    font-weight: normal;
+    color: #fff;
+    text-decoration: underline;
+}
+
+.main-header-links a:hover,
+.main-header-links a:active {  
+    color: #FFBC9E;
+}
+
+.main-header-links span {  
+  font-family: "Roboto", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 16px;  
+    font-weight: normal;
+    color: #fff;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.main-header-links span:last-child {  
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.main-menu-active {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;  
+  font-weight: bold;
+  color: #fff;
+  background-color: #D07058;
+  text-decoration: none;   
+   padding: 10px 15px;
+  display: block;
+  border-radius: 20px;
+}
+
+.button-3-active {
+ height: 30px;
+  width: 115px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;  
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding-left: 30px;
+  position: relative;
+  cursor: default;  
+}
+
+.button-3-active::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  top: 5px;
+  left: 15px;
+  background-image: url("../img/sprite-1.png");
+  background-position: -30px;
 }
