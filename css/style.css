@@ -494,7 +494,8 @@ body > input[type="radio"] {
   margin-right: 26px;
 }
 
-.item:last-child {  
+.item:nth-child(4n),
+.item-2:nth-child(4n) {  
   margin-right: 0;
 }
 
@@ -562,7 +563,8 @@ body > input[type="radio"] {
  
 }
 
-.item a {
+.item a, 
+.item-2 a {
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 22px;  
@@ -575,7 +577,9 @@ body > input[type="radio"] {
 }
 
 .item a:hover,
-.item a:active {  
+.item a:active,
+.item-2 a:hover,
+.item-2 a:active {
   color: #FFBC9E;  
 }
 
@@ -1120,4 +1124,61 @@ body > input[type="radio"] {
   left: 15px;
   background-image: url("../img/sprite-1.png");
   background-position: -30px;
+}
+
+
+.items-2 {
+  min-height: 1220px;
+  font-size: 0;
+  background-color: red;
+}
+
+.item-2 {
+  height: 365px;
+  width: 267px;
+  display: inline-block;
+  vertical-align: top;  
+  font-size: 45px;
+  margin-right: 26px;
+}
+
+.img-5 {
+  height: 267px;
+  width: 267px;
+  background-image: url(../img/img-1.png);
+  margin-top: 40px;
+  box-sizing: border-box; 
+  padding-top: 150px;
+  position: relative;
+}
+
+.img-6 {
+  height: 267px;
+  width: 267px;
+  background-image: url(../img/img-2.png);
+  margin-top: 40px;
+  box-sizing: border-box;  
+  padding-top: 150px;
+  position: relative;
+}
+
+.img-7 {
+  height: 267px;
+  width: 267px;
+  background-image: url(../img/img-3.png);
+  margin-top: 40px;
+  box-sizing: border-box;  
+  padding-top: 150px;
+  position: relative;
+}
+
+.img-8 {
+  height: 267px;
+  width: 267px;
+  background-image: url(../img/img-4.png);
+  box-sizing: border-box;
+  margin-top: 40px;  
+  padding-top: 150px;
+  position: relative;
+  
 }
