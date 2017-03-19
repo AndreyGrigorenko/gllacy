@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
-  <title>Gllacy: Каталог</title>
+  <title>Каталог</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&subset=latin,cyrillic" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="css/normalize-min.css">
-  <link rel="stylesheet" href="css/style-min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="inner-page">
@@ -42,7 +41,7 @@
             </div>
 
             <div class="user-login-block">
-              <a class="user-login-link" href="#">Вход</a>
+              <a class="user-login-link-2" href="#">Вход</a>
               <form class="clearfix" action="#" method="POST">
                 <input type="email" name="login-email" id="login-email" placeholder="Электронная почта">
                 <input type="password" name="login-password" id="login-password" placeholder="Пароль">
@@ -94,24 +93,23 @@
           </div>
         </div>
         <ul class="breadcrumbs ">
-          <li class="breadcrumbs-list"><a href="#">Главная</a></li>
+          <li class="breadcrumbs-list"><a href="index.html">Главная</a></li>
           <li class="breadcrumbs-list"><a href="#">Каталог</a></li>
           <li class="breadcrumbs-list">Сливочное</li>
         </ul>
       </header>
+
       <main class="inner-main clearfix">
         <h1 class="main-title">Сливочное мороженое</h1>
         <form class="catalog-form" action="#" method="POST">
           <fieldset class="catalog-form-select">
             <legend>Сортировка</legend>
-
             <select name="sorting" id="sorting-field">
-                            <option value="popularity">по популярности</option>
-                            <option value="popularity">сначала не дорогие</option>
-                            <option value="popularity">сначала дорогие</option>
-                            <option value="popularity">по жирности</option>
-                        </select>
-
+                <option value="popularity">по популярности</option>
+                <option value="popularity">сначала не дорогие</option>
+                <option value="popularity">сначала дорогие</option>
+                <option value="popularity">по жирности</option>
+            </select>
           </fieldset>
 
           <fieldset>
@@ -126,18 +124,17 @@
               </div>
               <div class="price-controls">
                 <label for="min-price">
-                                    <input type="text" name="min-price" id="min-price" value="100 руб.">
-                                </label>
+                  <input type="text" name="min-price" id="min-price" value="100 руб.">
+                </label>
                 <label for="max-price">
-                                    <input type="text" name="max-price" id="max-price" value="500 руб.">
-                                </label>
+                  <input type="text" name="max-price" id="max-price" value="500 руб.">
+                </label>
               </div>
             </div>
           </fieldset>
 
           <fieldset class="fat-content">
             <legend>Жирность:</legend>
-
             <input class="input-radio" type="radio" name="fat" value="0%" id="fat-0">
             <label for="fat-0">0%</label>
             <input class="input-radio" type="radio" name="fat" value="to10%" id="fat-10" checked>
@@ -146,12 +143,10 @@
             <label for="fat-30">до 30%</label>
             <input class="input-radio" type="radio" name="fat" value="more30%" id="fat-more30">
             <label for="fat-more30">выше 30%</label>
-
           </fieldset>
 
           <fieldset class="fillers-content">
             <legend>Наполнители:</legend>
-
             <input class="input-checkbox" type="checkbox" name="choco" id="choco" checked>
             <label for="choco">шоколадные</label>
             <input class="input-checkbox" type="checkbox" name="sugar" id="sugar" checked>
@@ -162,10 +157,10 @@
             <label for="syrop">сиропы</label>
             <input class="input-checkbox" type="checkbox" name="jam" id="jam">
             <label for="jam">джемы</label>
-
           </fieldset>
           <button class="catalog-btn" type="submit">Применить</button>
         </form>
+
         <div class="catalog-content">
           <div class="catalog-items">
             <div class="catalog-item">
@@ -174,7 +169,7 @@
                   <img src="img/orange-ice-cream.jpg" alt="мороженое" width="267" height="267">
                 </a>
                 <span class="price">
-                            <span>310</span>
+                  <span>310</span>
                 <span>/кг</span>
                 </span>
               </div>
@@ -190,7 +185,7 @@
                   <img src="img/choco-ice-cream.jpg" alt="мороженое" width="267" height="267">
                 </a>
                 <span class="price">
-                            <span>380</span>
+                  <span>380</span>
                 <span>/кг</span>
                 </span>
               </div>
@@ -206,7 +201,7 @@
                   <img src="img/strawberry-ice-cream.jpg" alt="мороженое" width="267" height="267">
                 </a>
                 <span class="price">
-                            <span>355</span>
+                  <span>355</span>
                 <span>/кг</span>
                 </span>
               </div>
@@ -222,7 +217,7 @@
                   <img src="img/caramel-ice-cream.jpg" alt="мороженое" width="267" height="267">
                 </a>
                 <span class="price">
-                            <span>415</span>
+                  <span>415</span>
                 <span>/кг</span>
                 </span>
               </div>
@@ -238,7 +233,7 @@
                   <img src="img/bilberry-ice-cream.jpg" alt="мороженое" width="267" height="267">
                 </a>
                 <span class="price">
-                            <span>325</span>
+                  <span>325</span>
                 <span>/кг</span>
                 </span>
               </div>
@@ -253,7 +248,7 @@
                   <img src="img/cowberry-ice-cream.jpg" alt="мороженое" width="267" height="267">
                 </a>
                 <span class="price">
-                            <span>410</span>
+                  <span>410</span>
                 <span>/кг</span>
                 </span>
               </div>
@@ -269,7 +264,7 @@
                   <img src="img/lemon-ice-cream.jpg" alt="мороженое" width="267" height="267">
                 </a>
                 <span class="price">
-                            <span>375</span>
+                  <span>375</span>
                 <span>/кг</span>
                 </span>
               </div>
@@ -285,7 +280,7 @@
                   <img src="img/shevings-ice-cream.jpg" alt="мороженое" width="267" height="267">
                 </a>
                 <span class="price">
-                            <span>320</span>
+                  <span>320</span>
                 <span>/кг</span>
                 </span>
               </div>
@@ -301,7 +296,7 @@
                   <img src="img/vanilla-ice-cream.jpg" alt="мороженое" width="267" height="267">
                 </a>
                 <span class="price">
-                            <span>440</span>
+                  <span>440</span>
                 <span>/кг</span>
                 </span>
               </div>
@@ -317,7 +312,7 @@
                   <img src="img/menthol-ice-cream.jpg" alt="мороженое" width="267" height="267">
                 </a>
                 <span class="price">
-                            <span>435</span>
+                  <span>435</span>
                 <span>/кг</span>
                 </span>
               </div>
@@ -333,7 +328,7 @@
                   <img src="img/dark-ice-cream.jpg" alt="мороженое" width="267" height="267">
                 </a>
                 <span class="price">
-                            <span>355</span>
+                  <span>355</span>
                 <span>/кг</span>
                 </span>
               </div>
@@ -349,7 +344,7 @@
                   <img src="img/mint-ice-cream.jpg" alt="мороженое" width="267" height="267">
                 </a>
                 <span class="price">
-                            <span>420</span>
+                  <span>420</span>
                 <span>/кг</span>
                 </span>
               </div>
@@ -368,10 +363,11 @@
           <a class="next" href="#">next</a>
         </div>
       </main>
+
       <footer class="main-footer inner-footer clearfix">
         <div class="social">
           <a href="#" class="social-btn social-icon-tw">Twitter</a>
-          <a href="#" class="social-btn social-icon-insta">insta</a>
+          <a href="#" class="social-btn social-icon-insta">inst</a>
           <a href="#" class="social-btn social-icon-fb">Facebook</a>
           <a href="#" class="social-btn social-icon-vk">Vkontakte</a>
         </div>
@@ -381,14 +377,12 @@
           <li class="production-list"><a href="#">О производстве</a></li>
           <li class="production-list"><a href="#">Экологические стандарты</a></li>
         </ul>
-
         <div class="copyright">
           <a href="#" class="copyright-logo"></a>
-          <p class="copyright-text">Сделано в <a href="https://htmlacademy.ru/">HTML Academy</a> © 2017</p>
+          <p class="copyright-text">Сделано в <a href="https://htmlacademy.ru/">HTML Academy </a>© 2017</p>
         </div>
       </footer>
     </div>
   </div>
 </body>
-
 </html>
